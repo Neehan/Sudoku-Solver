@@ -85,7 +85,7 @@ int main(){
     cout << "1 0 0 4 0 0 0 0 0\n";   
     cout << "0 0 9 0 8 0 0 5 0\n";  
     cout << "0 2 0 0 0 0 6 0 0\n"; 
-    cout << "4 0 0 7 0 0 0 0 0\nWhere 0 stands for an empty cell\n\n";
+    cout << "4 0 0 7 0 0 0 0 0\nWhere 0 stands for an empty cell\nNow write down your sudoku\n\n";
     for(i=0;i<81;i++){
          cin >> j; ///the cell of ith column and jth row.
          if(j>0){

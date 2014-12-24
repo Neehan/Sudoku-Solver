@@ -41,6 +41,7 @@ input this:
 0 0 0 0 3 0 9 4 5
 0 0 0 0 7 1 0 0 6
 `````
+**Note: The given sudoku must have at least one solution.** 
 ##License
 This is  published under GPL version 3 (or later). See the `LICENSE` for details.
 

@@ -3,7 +3,7 @@ Sudoku-Solver
 
 This is another simple sudoku solver. Have fun!
 
-#How to use
+##How to use
 Write the value of each cell separated by a space. Value of an empty cell is 0.
 
 ##Example
@@ -19,6 +19,6 @@ Write the value of each cell separated by a space. Value of an empty cell is 0.
 0 0 0 0 7 1 0 0 6
 `````
 
-#License
-This is  published under GPL version 3 (or later).
+##License
+This is  published under GPL version 3 (or later). See the `LICENSE` for details.
 

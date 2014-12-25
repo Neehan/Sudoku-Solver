@@ -75,16 +75,16 @@ int main(){
     register int i,j;
     for(i=0;i<9;i++) sudoku[0].push_back(i+1);
     for(i=0,j;i<81;i++)sudoku[i]=sudoku[0];
-    clock_t t=clock();
+
     cout << "SAMPLE INPUT\n";
     cout << "0 0 0 0 0 0 0 3 9\n";
     cout << "0 0 0 0 0 1 0 0 5\n";
-    cout << "0 0 3 0 5 0 8 0 0\n"; 
-    cout << "0 0 8 0 9 0 0 0 6\n";  
-    cout << "0 7 0 0 0 2 0 0 0\n";  
-    cout << "1 0 0 4 0 0 0 0 0\n";   
-    cout << "0 0 9 0 8 0 0 5 0\n";  
-    cout << "0 2 0 0 0 0 6 0 0\n"; 
+    cout << "0 0 3 0 5 0 8 0 0\n";
+    cout << "0 0 8 0 9 0 0 0 6\n";
+    cout << "0 7 0 0 0 2 0 0 0\n";
+    cout << "1 0 0 4 0 0 0 0 0\n";
+    cout << "0 0 9 0 8 0 0 5 0\n";
+    cout << "0 2 0 0 0 0 6 0 0\n";
     cout << "4 0 0 7 0 0 0 0 0\nWhere 0 stands for an empty cell\nNow write down your sudoku\n\n";
     for(i=0;i<81;i++){
          cin >> j; ///the cell of ith column and jth row.
@@ -94,6 +94,7 @@ int main(){
             check();
          }
     }
+    clock_t t=clock();
     stack< vector < vector<int> > > mystack;
     mystack.push(sudoku);
     while(!mystack.empty()){
@@ -110,12 +111,16 @@ int main(){
                 if(solved()){
                     print_sol();
                     t=clock()-t;
-                    float a=(float)t/(float)1000000;
-                    cout << "\nRuntime: " << setprecision(3) << a << " s\n";
-                    return 0;
+                    float a=(float)t/(float)CLOCKS_PER_SEC;
+                    cout << "\nRuntime: " << setprecision(3) << a << " Seconds\n";
+                    cout << "Press q to quit\n";
+                    char quit;
+                    cin >> quit;
+                    if(quit=='q') return 0;
                 }
                 else mystack.push(sudoku);
             }
         }
     }
+    cout << "Cam't solve\n";
 }

@@ -49,7 +49,7 @@ bool conflict(){
     return false;
 }
 int FIND_MIN_CHOICE(){
-    int MIN;
+    int MIN=1;
     for(int i=0;i<81;i++)if(sudoku[i].size()>1){
         MIN=i;
         break;

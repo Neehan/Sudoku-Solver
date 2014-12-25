@@ -122,5 +122,5 @@ int main(){
             }
         }
     }
-    cout << "Cam't solve\n";
+    cout << "Can't solve\n";
 }

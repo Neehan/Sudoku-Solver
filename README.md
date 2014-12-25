@@ -29,7 +29,7 @@ To solve the following sudoku
 |   |   |   |   | 7 | 1 |   |   | 6 |
 +---+---+---+---+---+---+---+---+---+
 ```
-input this:
+Input this:
 `````
 1 0 0 9 2 0 0 0 0
 5 2 4 0 1 0 0 0 0

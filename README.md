@@ -43,5 +43,5 @@ Input this:
 `````
 **Note: The given sudoku must have at least one solution.** 
 ##License
-This is  published under GPL version 3 (or later). See the `LICENSE` for details.
+This is  published under GPL version 3. See the `LICENSE` for details.
 

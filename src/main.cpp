@@ -1,13 +1,12 @@
 /**
- * This another simple sudoku solver
+ * This another typical simple sudoku solver
  * Uses DFS for searching
- * This code is published under GPL version 3 (or later)
- * copyright Adib Hasan (Neehan)
+ * This code is published under GPL version 3
+ * Copyright (c) 2014-2015 Adib Hasan (Neehan)
  **/
 
 #include <iomanip>
 #include <iostream>
-#include <fstream>
 #include <algorithm>
 #include <vector>
 #include <stack>
@@ -30,7 +29,6 @@ void check(){
 
             /**COLUMN CHECK**/
 
-            int temp1=sudoku[53][0];
             myit=find(sudoku[k*9+row].begin(),sudoku[k*9+row].end(),j);
             if(myit!=sudoku[k*9+row].end()) sudoku[k*9+row].erase(myit);
 
@@ -43,7 +41,6 @@ void check(){
         sudoku[i].push_back(j);
     }
 }
-
 bool conflict(){
     for(int i=0;i<81;i++) if(sudoku[i].size()==0) return true;
     return false;
@@ -62,16 +59,16 @@ bool solved(){
     return true;
 }
 void print_sol(){
-    for(int i=0;i<9;i++){
-        for(int j=0;j<9;j++){
-            for(int k=0;k<sudoku[9*i+j].size();k++) cout << sudoku[9*i+j][k];
-            for(int k=0;k<3-sudoku[9*i+j].size();k++) cout << " ";
-        }
-        cout << endl;
+    for(int i=0;i<81;i++){
+        if( i % 27 == 0 ) cout << "\n+-------+-------+-------+\n| " << sudoku[i][0] << " ";
+        else if( i % 27 == 26 ) cout << sudoku[i][0] << " |";
+        else if( i % 9 == 0 ) cout << "|\n| " << sudoku[i][0] << " ";
+        else if( i % 3 == 0 ) cout << "| " << sudoku[i][0] << " ";
+        else cout << sudoku[i][0] << " ";
     }
+    cout << "\n+-------+-------+-------+\n";
 }
-
-int main(){
+int main() {
     register int i,j;
     for(i=0;i<9;i++) sudoku[0].push_back(i+1);
     for(i=0,j;i<81;i++)sudoku[i]=sudoku[0];
@@ -85,14 +82,20 @@ int main(){
     cout << "1 0 0 4 0 0 0 0 0\n";
     cout << "0 0 9 0 8 0 0 5 0\n";
     cout << "0 2 0 0 0 0 6 0 0\n";
-    cout << "4 0 0 7 0 0 0 0 0\nWhere 0 stands for an empty cell\nNow write down your sudoku\n\n";
-    for(i=0;i<81;i++){
-         cin >> j; ///the cell of ith column and jth row.
-         if(j>0){
-            sudoku[i].clear();
-            sudoku[i].push_back(j);
-            check();
+    cout << "4 0 0 7 0 0 0 0 0\nWhere 0 stands for an empty cell\nNow write down your sudoku. See README.html for details.\n\n";
+    for(i=0;i<81;){
+         char val;
+         cin >> val; ///the cell of ith column and jth row.
+         if(isdigit(val)){
+             j=atoi(&val);
+             if(j>0){
+                sudoku[i].clear();
+                sudoku[i].push_back(j);
+                check();
+             }
+             i++;
          }
+         else if(val=='.') i++;
     }
     clock_t t=clock();
     stack< vector < vector<int> > > mystack;
@@ -116,7 +119,7 @@ int main(){
                     cout << "Press q to quit\n";
                     char quit;
                     cin >> quit;
-                    if(quit=='q') return 0;
+                    return 0;
                 }
                 else mystack.push(sudoku);
             }

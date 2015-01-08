@@ -14,7 +14,7 @@ Write the value of each cell separated by a space. Value of an empty cell is eit
 
 ###Method 2
 
-Open sudoku.txt. You will see two blank sudokus there. One with empty cells as ., and the other with 0. Choose whichever you prefer and substitute the cells with clues from your sudoku. Now copy the sudoku and close the file without saving. After that run the Sudoku-Solver, paste the sudoku and then press enter.
+Open `sudoku.txt`. You will see two blank sudokus there. One with empty cells as `.`, and the other with `0`. Choose whichever you prefer and substitute the cells with clues from your sudoku. Now copy the sudoku and close the file without saving. After that run the Sudoku-Solver, paste the sudoku and then press enter.
 
 ##Example
 

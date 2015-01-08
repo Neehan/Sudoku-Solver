@@ -3,11 +3,14 @@ Sudoku-Solver
 
 This is another simple sudoku solver. Have fun!
 
+##How to install
+[Download the latest](http://www.github.com/Neehan/Sudoku-Solver/releases) Sudoku-Solver and unzip it. Run `Sudoku-Solver` (for ubuntu) or `Sudoku-Solver.exe` (for windows). That's it.
+
 ##How to use
 
 ###Method 1
 
-Write the value of each cell separated by a space. Value of an empty cell is either 0 or . . However, you may make a typo while typing the sudoku. That's why I recommend the alternative method.
+Write the value of each cell separated by a space. Value of an empty cell is either `0` or `.` . However, you may make a typo while typing the sudoku. That's why I recommend the alternative method.
 
 ###Method 2
 

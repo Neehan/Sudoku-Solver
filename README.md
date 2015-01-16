@@ -5,6 +5,7 @@ This is another simple sudoku solver. Have fun!
 
 ##How to install
 [Download the latest](http://www.github.com/Neehan/Sudoku-Solver/releases) Sudoku-Solver and unzip it. Run `Sudoku-Solver` (for ubuntu) or `Sudoku-Solver.exe` (for windows). That's it.
+You can also try an online demo: http://goo.gl/ZiJEF8
 
 ##How to use
 

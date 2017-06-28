@@ -61,5 +61,5 @@ Let's solve the following sudoku with `Sudoku-Solver`.
 Execution time: 0.000593 s
 ```
 ## License
-This is  published under GPL version 3. See the [`LICENSE`](LICENSE) for details.
+This software is  published under GPL version 3. See the [`LICENSE`](LICENSE) for details.
 

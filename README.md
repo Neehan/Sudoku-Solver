@@ -9,7 +9,7 @@ Download [the latest release](http://www.github.com/Neehan/Sudoku-Solver/release
 
 How to use
 -----------
-Feed this program your sudoku from `stdinput`. Blank cells has to be replaced by either `0` or `.`. The program will discard all other characters and wait until 81 valid inputs (for 81 cells of your sudoku) are provided.
+Feed this program your sudoku from `stdinput`. Blank cells has to be replaced by either `0` or `.`. The program will discard all other characters and wait until 81 valid inputs (for 81 cells of your sudoku) have been provided.
 
 Example
 --------

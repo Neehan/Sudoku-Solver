@@ -29,7 +29,8 @@ void dfs(Board& s){
     }
 }
 
-int main(){
+int main(void){
+    cout << "Enter sudoku. See README for details\n"; 
     cin >> b;
     auto begin = chrono::high_resolution_clock::now();
     dfs(b);

@@ -5,7 +5,7 @@ This is another simple sudoku solver. Have fun!
 
 How to install
 --------------
-Download [the latest release](http://www.github.com/Neehan/Sudoku-Solver/releases) of `Sudoku-Solver`, unzip it, and run `Sudoku-Solver` (for ubuntu) or `Sudoku-Solver.exe` (for windows). That's it. Alternatively, you can run the [`Makefile`](Makefile) to build from source. 
+Download [the latest release](http://www.github.com/Neehan/Sudoku-Solver/releases) of `Sudoku-Solver`, and run it. Alternatively, you can run the [`Makefile`](Makefile) to build from source. 
 
 How to use
 -----------

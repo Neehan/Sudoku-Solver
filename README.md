@@ -1,5 +1,6 @@
 Sudoku-Solver
 ==============
+[![Build Status](https://travis-ci.org/Neehan/Sudoku-Solver.svg?branch=master)](https://travis-ci.org/Neehan/Sudoku-Solver)
 This is a very fast sudoku solver that solves most sudokus under 1 millisecond. 
 
 How to install

@@ -1,10 +1,9 @@
 Sudoku-Solver
-=============
-
-This is another simple sudoku solver. Have fun!
+==============
+This is a very fast sudoku solver that solves most sudokus under 1 millisecond. 
 
 How to install
---------------
+---------------
 Download [the latest release](http://www.github.com/Neehan/Sudoku-Solver/releases) of `Sudoku-Solver`, and run it. Alternatively, you can run the [`Makefile`](Makefile) to build from source. 
 
 How to use
@@ -13,7 +12,7 @@ Feed this program your sudoku from `stdinput`. Blank cells has to be replaced by
 
 Example
 --------
-Let's solve the following sudoku with `Sudoku-Solver`.
+Let us solve the following sudoku with `Sudoku-Solver`.
 ```
 +-------+-------+-------+
 | 1 . . | 9 2 . | . . . |
@@ -29,6 +28,7 @@ Let's solve the following sudoku with `Sudoku-Solver`.
 | . . . | . 7 1 | . . 6 |
 +-------+-------+-------+
 ```
+**Note: The given sudoku must have _at least_ one solution.**
 ## Input
 ```
 1 . . 9 2 . . . .
@@ -41,7 +41,6 @@ Let's solve the following sudoku with `Sudoku-Solver`.
 . . . . 3 . 9 4 5
 . . . . 7 1 . . 6
 ```
-**Note: The given sudoku must have at least one solution.**
 ## Output
 ```
 +-------+-------+-------+

@@ -1,13 +1,10 @@
 language: cpp
 os:
-  - linux
+    - linux
 sudo: required
 dist: trusty
 compiler:
-  - g++
-  - clang
-before_script:
-  - mkdir build
-  - cd build
+    - g++
+    - clang
 script:
 - make
